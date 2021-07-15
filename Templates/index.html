@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <body>
+  
+  <h2>Predict the industry type that a JD belongs to</h2>
+  
+  <form method="POST" action="/">
+    Job Description:<br>
+    <input type="text" name="JD" value="Job description">
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  {% if pred %}
+  <p>This job description belongs to <font style color='blue'> {{ pred }} </font>category</p>
+  {% endif %}
+
+  </body>
+</html>
